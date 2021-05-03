@@ -1,4 +1,3 @@
-/* integração com o serviço externo */
 import axios from 'axios';
 
 const api = axios.create({

@@ -1,19 +1,11 @@
 .login-container {
     width: 100%;
-    /* largura */
     max-width: 1120px;
-    /* largura maxima */
     height: 100vh;
-    /* altura */
     margin: 0 auto;
-    /* margem "0 auto" = para que o conteudo fique sempre centralizado */
     display: flex;
-    /* alinhar nossa pagina e por padrao todos os itens ficam um ao lado do outro */
-    /* flex-direction: column;/* alterando o default do display para alinhar como coluna um abaixo do outro*/
     align-items: center;
-    /* alinhar os itens verticalmente */
     justify-content: space-between;
-    /* alinhar os itens horizontalmente*/
 }
 
 .login-container section.form {
@@ -23,12 +15,10 @@
 }
 
 .login-container section.form form {
-    /* formulário */
     margin-top: 100px;
 }
 
 .login-container section.form form h1 {
-    /* titulo */
     font-size: 32px;
     margin-bottom: 32px;
 }

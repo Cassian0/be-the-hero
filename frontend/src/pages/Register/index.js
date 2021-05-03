@@ -1,14 +1,12 @@
 import React, { useState } from 'react';
+import { Link, useHistory } from 'react-router-dom';
+
+import LogoImg from '../../assets/logo.svg';
+import { FiArrowLeft } from 'react-icons/fi';
 
 import api from '../../services/api';
 
 import './styles.css';
-
-import LogoImg from '../../assets/logo.svg';
-
-import { Link, useHistory } from 'react-router-dom';
-
-import { FiArrowLeft } from 'react-icons/fi';
 
 export default function Register() {
     const [name, setName] = useState('');
@@ -18,10 +16,8 @@ export default function Register() {
     const [uf, setUf] = useState('');
 
     const history = useHistory();
-    /* essa função vai ser disparada quando for dado um submit */
     async function handleRegister(e) {
-        e.preventDefault();/* retirar a atualização default */
-
+        e.preventDefault();
         const data = {
             name,
             email,
@@ -40,7 +36,7 @@ export default function Register() {
         }
     }
 
-    return (
+return (
         <div className="register-container">
             <div className="content">
 
@@ -51,10 +47,10 @@ export default function Register() {
                     <Link className="back-link" to="/" >
                         <FiArrowLeft size={16} color="#E02041" />
                         Não Tenho Cadastro
-                     </Link>
+                        </Link>
                 </section>
 
-                <form onSubmit={handleRegister}>{/* chamando a função */}
+                <form onSubmit={handleRegister}>
                     <input
                         placeholder="Nome da ONG"
                         value={name}
@@ -90,5 +86,4 @@ export default function Register() {
             </div>
         </div>
     );
-
 }

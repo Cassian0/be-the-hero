@@ -1,15 +1,12 @@
 import React, { useState } from 'react';
-
 import { Link, useHistory } from 'react-router-dom';
-
-import './styles.css'; /*./ => significa que o arquivo esta na mesma pagina*/
-
-import heroesImg from '../../assets/heroes.png'; /* importação de nossa imagem */
-
-import { FiLogIn } from 'react-icons/fi'; /* Icone da pagina de login */
 
 import api from '../../services/api';
 
+import './styles.css'; 
+
+import { FiLogIn } from 'react-icons/fi'; 
+import heroesImg from '../../assets/heroes.png'; 
 import logoImg from '../../assets/logo.svg';
 
 export default function Login() {
@@ -51,5 +48,4 @@ export default function Login() {
             <img src={heroesImg} alt="Heroes" />
         </div>
     );
-
 }

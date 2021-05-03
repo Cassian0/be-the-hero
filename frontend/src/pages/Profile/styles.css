@@ -34,7 +34,6 @@
     margin-left: 16px;
     transition: border-color 0.3s;
 }
-/* Transição da cor da borda ao passar o mouse  */
 .profile-container header button:hover {
     border-color: #999;
 }
@@ -74,7 +73,6 @@
     margin-bottom: 16px;
     color: #41414d;
 }
-/* depois do primeiro "strong" adiciona margin-top de 32px */
 .profile-container ul li p + strong {
     margin-top: 32px;
 }
